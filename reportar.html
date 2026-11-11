@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Rescate</a></li>
+                <li><a href="rescates.html">Ver Rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario para Reporte de Rescates</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información del Rescatador</legend>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Caso</legend>
+                    <label for="tipo">Tipo de Especie:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="canino">Canino (Perro)</option>
+                        <option value="felino">Felino (Gato)</option>
+                        <option value="otro">Otro</option>
+                    </select><br><br>
+
+                    <label for="fecha">Fecha del Hallazgo:</label>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+
+                    <label for="descripcion">Descripción de la Situación:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="40" required></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Enviar Reporte</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Rescate. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
